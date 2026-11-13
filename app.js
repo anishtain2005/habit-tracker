@@ -72,5 +72,5 @@ document.getElementById("habit-form").addEventListener("submit", function (event
   input.value = "";
   render();
 });
-
+document.getElementById("today-date").textContent = "تاریخ امروز: " + todayString();
 render();
