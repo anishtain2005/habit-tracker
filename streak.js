@@ -20,5 +20,7 @@ function calculateStreak(doneDates, today) {
   }
   return streak;
 }
-
-module.exports = { calculateStreak };
+//اگه داخل نود بودی مثل تست ها اکسپورت کن  اگه داخل مرورگر بودی کار نکن
+if (typeof module !== "undefined") {
+  module.exports = { calculateStreak };
+}

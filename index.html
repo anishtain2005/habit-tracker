@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habit Tracker</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; max-width: 500px; margin: 40px auto; padding: 0 16px; }
+    form { display: flex; gap: 8px; margin-bottom: 20px; }
+    input { flex: 1; padding: 8px; }
+    button { padding: 8px 12px; cursor: pointer; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; justify-content: space-between; align-items: center;
+         gap: 8px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>ردیاب عادت‌ها</h1>
+
+  <form id="habit-form">
+    <input id="habit-name" placeholder="اسم عادت جدید، مثلاً مطالعه" required>
+    <button type="submit">افزودن</button>
+  </form>
+
+  <ul id="habit-list"></ul>
+
+  <script src="streak.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
